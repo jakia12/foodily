@@ -6,7 +6,7 @@ const HeroBanner = () => {
     <section className="relative overflow-hidden bg-[#6C2121]">
       {/* Background */}
 
-      <div className="relative mx-auto max-w-[1450px] px-4 sm:px-6">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex min-h-[80vh] flex-col items-center justify-center gap-12 py-16 lg:min-h-[85vh] lg:flex-row lg:justify-between lg:py-20">
           {/*left Content */}
           <div className="w-full md:w-[45%] text-center lg:text-left">
@@ -43,7 +43,7 @@ const HeroBanner = () => {
           </div>
 
           {/* right image */}
-          <div className="relative w-full md:w-[55%] flex-shrink-0">
+          <div className="relative w-full md:w-[55%] ">
             <div className="absolute -inset-8 rounded-[2rem] bg-white/5 blur-3xl" />
 
             <Image
