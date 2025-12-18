@@ -95,7 +95,7 @@ export default function CalendarGrid({ location }) {
       </div>
 
       {/* Calendar grid */}
-      <div className="mt-2 grid grid-cols-7 gap-2">
+      <div className="mt-2 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2">
         {days.map((dateObj, idx) => {
           const iso = dateObj ? toISO(dateObj) : null;
           const dayEvents = iso ? eventsByDate[iso] || [] : [];

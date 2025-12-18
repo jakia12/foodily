@@ -5,7 +5,7 @@ export const locations = [
     type: "Coffee Shop",
     address: "20 Cooper Square, NY 10003",
     phone: "321-372-1098",
-    logo: "/locations/mimas-logo.png",
+    logo: "/logos/cafe2.jpg",
     website: "https://example.com",
     socials: {
       facebook: "https://facebook.com",
@@ -56,7 +56,7 @@ export const locations = [
     type: "Food Truck",
     address: "5501 Broadway, New York",
     phone: "(123) 456-7890",
-    logo: "/locations/grub-logo.png",
+    logo: "/logos/gr.jpg",
     website: "https://example.com",
     socials: { facebook: "#", instagram: "#", twitter: "#" },
     schedule: [
@@ -75,12 +75,7 @@ export const locations = [
         desc: "Double patty + fries",
         price: "$12.00",
       },
-      {
-        id: "gm2",
-        name: "Chicken Wrap",
-        desc: "Spicy sauce",
-        price: "$9.50",
-      },
+      { id: "gm2", name: "Chicken Wrap", desc: "Spicy sauce", price: "$9.50" },
     ],
   },
 
@@ -90,7 +85,7 @@ export const locations = [
     type: "Mexican Street Food",
     address: "14 Bedford Ave, Brooklyn, NY",
     phone: "917-555-2211",
-    logo: "/locations/sunset-tacos.png",
+    logo: "/logos/taco.avif",
     website: "https://example.com",
     socials: { facebook: "#", instagram: "#", twitter: "#" },
     schedule: [
@@ -127,7 +122,7 @@ export const locations = [
     type: "Specialty Coffee",
     address: "88 Spring St, Soho, NY",
     phone: "646-222-8899",
-    logo: "/locations/urban-brew.png",
+    logo: "/logos/ur.jpg",
     website: "https://example.com",
     socials: { facebook: "#", instagram: "#", twitter: "#" },
     schedule: [
@@ -151,7 +146,7 @@ export const locations = [
     type: "Healthy Eats",
     address: "301 Hudson St, NY",
     phone: "212-888-3344",
-    logo: "/locations/green-bowl.png",
+    logo: "/logos/bowl.jpg",
     website: "https://example.com",
     socials: { facebook: "#", instagram: "#", twitter: "#" },
     schedule: [
@@ -185,7 +180,7 @@ export const locations = [
     type: "Pizza Truck",
     address: "Times Square Area, NY",
     phone: "929-777-9090",
-    logo: "/locations/midnight-pizza.png",
+    logo: "/logos/pizz.jpg",
     website: "https://example.com",
     socials: { facebook: "#", instagram: "#", twitter: "#" },
     schedule: [
@@ -198,12 +193,7 @@ export const locations = [
       },
     ],
     menu: [
-      {
-        id: "mpm1",
-        name: "Margherita Slice",
-        desc: "Classic",
-        price: "$4.00",
-      },
+      { id: "mpm1", name: "Margherita Slice", desc: "Classic", price: "$4.00" },
       {
         id: "mpm2",
         name: "Pepperoni Slice",

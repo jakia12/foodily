@@ -124,6 +124,21 @@
   }
 }
 
+/* custom google font */
+
+body {
+  font-family: var(--font-poppins), system-ui, -apple-system, sans-serif;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-libre-caslon), serif;
+}
 /* Custom gradient button */
 .btn-hover {
   color: #fff;
@@ -160,4 +175,74 @@
 }
 .swiper-pagination-bullet-active {
   background: #f97316;
+}
+/* ================================
+   Location Card Interactions
+   ================================ */
+
+/* Smooth base animation */
+.anim {
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+/* Hover: lift + glow */
+.anim:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08), 0 4px 10px rgba(0, 0, 0, 0.04);
+  border-color: rgba(251, 146, 60, 0.6); /* orange glow */
+}
+
+/* Click / tap feedback */
+.anim:active {
+  transform: translateY(-1px) scale(0.98);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Logo micro-zoom on hover */
+.anim:hover img {
+  transform: scale(1.08);
+}
+
+.anim img {
+  transition: transform 0.4s ease;
+}
+
+/* Animated underline bar */
+.anim div:last-child {
+  transition: width 0.4s ease, opacity 0.3s ease, transform 0.4s ease;
+  transform-origin: left;
+}
+
+/* Expand gradient bar on hover */
+.anim:hover div:last-child {
+  width: 120px;
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* CTA text slide effect */
+.anim span:first-child {
+  position: relative;
+}
+
+.anim span:first-child::after {
+  content: "";
+  margin-left: 6px;
+  opacity: 0;
+  transform: translateX(-4px);
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.anim:hover span:first-child::after {
+  opacity: 1;
+  transform: translateX(2px);
+}
+.anim {
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease, border-color 0.35s ease, background-color 0.35s ease;
+}
+.anim img {
+  transition: transform 0.4s ease;
 }

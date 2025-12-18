@@ -73,7 +73,7 @@ const ContactForm = () => {
                   <Mail className="h-5 w-5 text-white" />
                 </div>{" "}
                 <p className="font-semibold text-white">Email</p>
-                <p className="text-white ">hello@yourfoodtruck.com</p>
+                <p className="text-white ">hello@fdtruck.com</p>
               </div>
               <div className="rounded-2xl border border-black/10 bg-[#8F2E2F]  backdrop-blur p-5 text-center w-[200px]">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 py-2 mb-[12px] mx-auto">

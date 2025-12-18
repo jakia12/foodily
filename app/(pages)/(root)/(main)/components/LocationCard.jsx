@@ -5,7 +5,7 @@ export default function LocationCard({ location }) {
   return (
     <Link
       href={`/locations/${location.slug}`}
-      className="group block rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+      className="group anim block rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
     >
       <div className="flex items-center gap-4">
         <div className="relative h-14 w-14 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
@@ -13,7 +13,7 @@ export default function LocationCard({ location }) {
             src={location.logo}
             alt={location.name}
             fill
-            className="object-contain p-2"
+            className="object-contain p-2 w-"
           />
         </div>
 
@@ -32,7 +32,7 @@ export default function LocationCard({ location }) {
 
       <div className="mt-5 flex items-center justify-between">
         <span className="text-sm font-semibold text-slate-700">
-          View Calendar →
+          View Calendar
         </span>
         <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">
           {location.schedule?.length || 0} dates
