@@ -1,4 +1,5 @@
 import "@/app/globals.css";
+import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Navbar";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "sonner";
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main>{children}</main>
         <Toaster position="top-right" richColors closeButton duration={4000} />
+        <Footer />
       </body>
     </html>
   );
