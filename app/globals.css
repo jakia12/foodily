@@ -3,7 +3,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -125,13 +124,11 @@
   }
 }
 
-
 /* Custom gradient button */
 .btn-hover {
   color: #fff;
   cursor: pointer;
 
-  
   background-size: 300% 100%;
   transition: all 0.4s ease-in-out;
 
@@ -147,7 +144,7 @@
     #e74c3c,
     #e74c3c
   );
-  box-shadow: 0 4px 8px 0 rgba(229, 66, 10, 0.75);
+  box-shadow: 0 4px 4px 0 rgba(229, 66, 10, 0.75);
 }
 
 .btn-hover:hover {
@@ -157,10 +154,10 @@
 .btn-hover:focus {
   outline: none;
 }
- .swiper-pagination-bullet {
-          background: rgba(255, 255, 255, 0.35);
-          opacity: 1;
-        }
-        .swiper-pagination-bullet-active {
-          background: #f97316;
-        }
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.35);
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: #f97316;
+}
